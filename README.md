@@ -1,4 +1,4 @@
-# Final Project
+# Final Project - Turnover-Prediction-for-Payment-Terminals
 
 Code Academy - Azerbaijan
 Data Science Bootcamp
