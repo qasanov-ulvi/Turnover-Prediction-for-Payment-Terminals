@@ -105,7 +105,7 @@ mask = grouped_df['Main_Address'].isin(excluded_values)
 grouped_df = grouped_df[~mask]
 
 #extracting districts, streets, highways etc
-separatorwords = ['şəh.', 'küç','qəs','yolu','massivi','şos', 'pr']
+separatorwords = [' küç',' qəs',' yolu',' massivi',' şos', ' pr.']
 for word in separatorwords:
     grouped_df[word] = grouped_df['Address'].apply(lambda x, word=word: x.split(word)[0].strip().split('. ')[-1] if word in x else None)
 
